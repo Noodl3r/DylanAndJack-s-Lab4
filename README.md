@@ -8,17 +8,9 @@ You can interpret this and figure out where to clone everything.
 ```
 bash-4.4$ pwd
 /home/dylansh/EC413/Lab4/Lab4/Lab_4/Lab_4.srcs/sources_1/new
-bash-4.4$ cd ..
 bash-4.4$ ls
-new
-bash-4.4$ ls -a
-.  ..  new
-bash-4.4$ cd ..
-bash-4.4$ ls -a
-.  ..  .git  sources_1
-bash-4.4$ pwd
-/home/dylansh/EC413/Lab4/Lab4/Lab_4/Lab_4.srcs
-bash-4.4$ 
+full_Adder_32.v  full_Adder_64CS.v  full_Adder.v  mux_32.v
+full_Adder_4.v	 full_Adder_64RC.v  mux_1.v
 ```
 
 Remember to make a project and you have to add the files as design files through the little plus sign. 
