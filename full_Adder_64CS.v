@@ -1,8 +1,8 @@
 module full_Adder_64CS(
     output c_out,
-    output s[63:0],
-    input  a[63:0],
-    input  b[63:0],
+    output [63:0]s,
+    input  [63:0]a,
+    input  [63:0]b,
     input  c_in
     );
 
@@ -12,7 +12,7 @@ module full_Adder_64CS(
 
     // second half
     wire c1, c2;
-    wire s1,s2 [31:0];
+    wire [31:0] s1,s2;
     full_Adder_32 FA32_2(c1, s1[31:0], a[63:32], b[63:32], 0);
     full_Adder_32 FA32_3(c2, s2[31:0], a[63:32], b[63:32], 1);
 
