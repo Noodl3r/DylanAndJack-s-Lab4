@@ -1,5 +1,5 @@
 module mux_1(
-    output q,
+    output reg q,
     input  a,
     input  b,
     input  sel
