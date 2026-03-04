@@ -1,7 +1,7 @@
 module mux_32(
-    output q[31:0],
-    input  a[31:0],
-    input  b[31:0],
+    output reg [31:0] q,
+    input [31:0] a,
+    input [31:0] b,
     input  sel
     );
 
@@ -9,5 +9,3 @@ module mux_32(
         q = (sel ? a : b);
     end
 endmodule
-
-
