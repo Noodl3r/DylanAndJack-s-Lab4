@@ -1,14 +1,14 @@
 module full_Adder_32(
     output c_out,
-    output s[31:0],
-    input  a[31:0],
-    input  b[31:0],
+    output [31:0]s,
+    input  [31:0]a,
+    input  [31:0]b,
     input  c_in
     );
 
     // Generate wires
-    wire   c[6:0];
- 
+    wire [6:0]c;
+
     // Instantiate full_adders
     full_Adder_4 FA4_1(c[0],  s[3:0],   a[3:0],   b[3:0],   c_in);
     full_Adder_4 FA4_2(c[1],  s[7:4],   a[7:4],   b[7:4],   c[0]);
