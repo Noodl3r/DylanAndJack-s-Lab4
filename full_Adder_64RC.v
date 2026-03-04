@@ -1,8 +1,8 @@
 module full_Adder_64RC(
     output c_out,
-    output s[63:0],
-    input  a[63:0],
-    input  b[63:0],
+    output [63:0] s,
+    input [63:0] a,
+    input [63:0] b,
     input  c_in
     );
 
