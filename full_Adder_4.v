@@ -1,17 +1,14 @@
 `timescale 1ns / 1ps
 module full_Adder_4(
     output c_out,
-    output sum[3:0],
-    input  a[3:0],
-    input  b[3:0],
+    output [3:0]sum,
+    input [3:0]a,
+    input [3:0]b,
     input  c_in
     );
-
-    input	   a, b, c_in; //declare inputs a, b and c_in, 1 bit each
-    output	   c_out, sum; //declare outputs c_out and sum, 1 bit each
-
+    
     //declare wire
-    wire       c[2:0];
+    wire       [2:0]c;
 
     //instantiate Adders
     full_Adder add0(c[0],  sum[0], a[0], b[0], c_in);
